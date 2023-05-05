@@ -58,3 +58,19 @@ Complete the add method that inserts the new entry into the correct place in the
 * What happens if someone enters a token like 7UP that looks like an integer initially but really isn't? 
 * Modify the infix-to-postfix converter to deal with this case by throwing a syntax error exception. 
 * Catch this in your calculator and ask the user to input a valid infix expression until the user finally does.
+
+## Problem 3 Queue
+
+In this problem, you will work on a simulation that uses queues to analyze a problem for a supermarket. The manager of the supermarket wants to analyze whether there should be a separate line (queue) of customers for each cash register or a single line that serves all cash registers so that once a cash register is available, the next person on line goes directly to that cash register to check out.
+
+## EXERCISES
+
+This practice contains a Customer class that models a customer in the supermarket. Each customer keeps track of the time when the customer enters the queue and how long it will take for the customer to check out once the customer arrives at the cash register.
+
+There are also two simulator classes, Simulation1 and Simulation2. Each simulation has three parameters, the probability that a customer arrives each minute, the number of registers in the market, and the total number of simulated minutes. The simulation then has a loop that simulates one minute of time in the market.
+
+1) Read the comments in each Simulation class and complete the required code.
+
+2) Run each simulator with the given parameters and see what the average waiting time is for a customer. Then increase the arrival probability by 0.1 at a time and look at the average waiting time. (The probability should not exceed 1.0 total.) 
+
+3) Try to decide which queue policy is better for the customers.
