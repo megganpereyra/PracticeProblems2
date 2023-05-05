@@ -40,4 +40,21 @@ Complete the add method that inserts the new entry into the correct place in the
 
 4) Test your code with the supplied testers (CalendarDateTester and StringTester). Your method should work for calendar dates and strings and for any other Comparable objects. (Why? Look at the OrderedArrayList class and see how its generic type is defined.)
 
-Problem 2: ArrayList
+## Problem 2: Stack
+
+
+1) Create a new class named ArrayStack2 that implements a stack where the top of the stack is always stored in position 0 of the array. 
+* When an element is pushed on this stack, the elements on the stack must be shifted to make room for the new element. 
+* Likewise, when an element is popped from this stack, the elements on the stack must be shifted the opposite direction to fill in the gap left by the removed element. 
+* Your class should implement the LIFOStack interface so it must include all of the required methods specified by that interface in the project.
+
+2) Test your ArrayStack2 class by changing the PostfixEvaluator class so that it uses a stack of type ArrayStack2 instead of ListStack.
+
+3) Create a new class Calculator that contains a main method that asks the user for an expression in infix notation and computes its value by first converting it to postfix and then evaluating its value. 
+* The infix expression must be input with spaces between each token. (This should not require a lot of code... THINK.)
+
+4) The postfix evaluator and infix-to-postfix generators can handle input of multiple digit positive integers as operands. 
+* How does it know if a token is an integer? 
+* What happens if someone enters a token like 7UP that looks like an integer initially but really isn't? 
+* Modify the infix-to-postfix converter to deal with this case by throwing a syntax error exception. 
+* Catch this in your calculator and ask the user to input a valid infix expression until the user finally does.
