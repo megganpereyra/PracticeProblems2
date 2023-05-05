@@ -5,20 +5,21 @@
 
 
 In this practice, you will build a class to implement a special array list that stores its values in increasing order. First, you will do this using the Java ArrayList class. Then you will do this using a class that implements an array list directly using an array. Remember to work with your group member(s).
-Clone the GitHub link.
-https://github.com/itamames/Lecture5
 
 
-This project contains a CalendarDate class that models a calendar date with a month, day and year (e.g. 7/4/1776).
+This project contains a CalendarDate class that models a calendar date with a month, day and year (e.g. 7//4//1776).
 A CalendarDate implements the Comparable interface which requires it to have a compareTo method.
 
+Using the compareTo method: 
+* If we have two objects a and b that are Comparable, then the method call a.compareTo(b) returns a positive integer 
+* if a is "greater" than b, a negative integer if a is "less" than b, or 0 if they are the same. 
+* For dates, the comparison is based on chronological order.
 
-```text
-Using the compareTo method: If we have two objects a and b that are Comparable, then the method call a.compareTo(b) returns a positive integer if a is "greater" than b, a negative integer if a is "less" than b, or 0 if they are the same. For dates, the comparison is based on chronological order.
 
+Example: 
 
-Example: If a is the date 12/4/1967 and b is the date 6/29/1951, the expression a.compareTo(b) returns a positive integer since a comes after b chronologically. (That is, a is "greater" than b in time.)
-```
+If a is the date 12/4/1967 and b is the date 6/29/1951, the expression a.compareTo(b) returns a positive integer since a comes after b chronologically. (That is, a is "greater" than b in time.)
+
 
 
 1) Read through the compareTo method in the CalendarDate class and explain how it works to your lab partner(s).
